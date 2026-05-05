@@ -1,0 +1,24 @@
+# Ambiente Python
+venv/
+__pycache__/
+*.pyc
+
+# Variáveis sensíveis
+.env
+
+# Banco e logs locais
+monitor_state.db
+monitor.log
+*.log
+
+# Arquivos do Replit/Node que não fazem parte do projeto final
+.replit
+.replitignore
+replit.md
+package.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+node_modules/
+lib/
+tsconfig*.json
+drizzle.config.ts
