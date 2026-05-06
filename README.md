@@ -106,10 +106,10 @@ A partir das próximas execuções, ele notifica apenas quando detectar novidade
 
 ## Agendamento com cron
 
-Exemplo para rodar a cada 30 minutos:
+Exemplo para rodar a cada 1 hora:
 
 ```bash
-*/30 * * * * cd /opt/notificador-editais && set -a && . ./.env && set +a && /opt/notificador-editais/venv/bin/python /opt/notificador-editais/main.py >> /opt/notificador-editais/monitor.log 2>&1
+0 * * * * cd /opt/notificador-editais && set -a && . ./.env && set +a && /opt/notificador-editais/venv/bin/python /opt/notificador-editais/main.py >> /opt/notificador-editais/monitor.log 2>&1
 ```
 
 Para editar o cron:
