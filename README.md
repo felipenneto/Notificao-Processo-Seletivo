@@ -109,7 +109,7 @@ A partir das próximas execuções, ele notifica apenas quando detectar novidade
 Exemplo para rodar a cada 1 hora:
 
 ```bash
-0 * * * * cd /opt/notificador-editais && set -a && . ./.env && set +a && /opt/notificador-editais/venv/bin/python /opt/notificador-editais/main.py >> /opt/notificador-editais/monitor.log 2>&1
+0 * * * * cd /root/apps/notificador-editais && set -a && . ./.env && set +a && /root/apps/notificador-editais/venv/bin/python /root/apps/notificador-editais/main.py >> /root/apps/notificador-editais/monitor.log 2>&1
 ```
 
 Para editar o cron:
@@ -129,19 +129,19 @@ crontab -l
 Para acompanhar os logs:
 
 ```bash
-tail -f /opt/notificador-editais/monitor.log
+tail -f /root/apps/notificador-editais/monitor.log
 ```
 
 Para visualizar as últimas linhas:
 
 ```bash
-tail -n 50 /opt/notificador-editais/monitor.log
+tail -n 50 /root/apps/notificador-editais/monitor.log
 ```
 
 Para limpar o log manualmente:
 
 ```bash
-truncate -s 0 /opt/notificador-editais/monitor.log
+truncate -s 0 /root/apps/notificador-editais/monitor.log
 ```
 
 ## Segurança
